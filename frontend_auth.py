@@ -74,7 +74,7 @@ def fetch_data():
 def determine_drinkability(data):
     if data['PH'] < 6.5 or data['PH']> 8.5:
         return "Not Drinkable (pH out of range)"
-    if data['Turbidity'] > 5:
+    if voltage_to_ntu(data['Turbidity']) >1:
         return "Not Drinkable (High Turbidity)"
     if data['TDS'] > 500:
         return "Not Drinkable (High TDS)"
