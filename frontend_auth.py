@@ -119,8 +119,8 @@ def voltage_to_ntu(voltage):
         # Map voltage range [0.5, 3.0] to NTU range [3000, 0]
         ntu = 3000 * (3.0 - voltage) / 2.5
         
-    print("v:", voltage)
-    print("ntu:", ntu)
+    print("voltage:", voltage)
+    print("NTU:", ntu)
     
     return ntu
     
