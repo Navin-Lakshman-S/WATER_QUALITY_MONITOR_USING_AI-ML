@@ -21,8 +21,8 @@ warnings.filterwarnings("ignore", category=DeprecationWarning)
 if 'email' not in st.session_state:
     st.session_state.email = ''
 
-cokie_name = os.getenv("COOKIE_NAME")
-sign_key = os.getenv("SIGN_KEY")
+cokie_name = base64.b64encode(secrets.token_bytes(32)).decode()
+sign_key = base64.b64encode(secrets.token_bytes(32)).decode()
 
 c_id = os.getenv("CL_ID")
 c_sec = os.getenv("CL_SECRET")
