@@ -84,7 +84,6 @@ void loop() {
       // Serial.println(sdata);
       String t_pH = Serial1.readStringUntil('$');
       PH = t_pH.toFloat();
-      PH = 7;
       // Serial.println(PH);
     }}
 
