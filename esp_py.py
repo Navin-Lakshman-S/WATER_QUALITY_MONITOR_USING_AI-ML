@@ -11,14 +11,13 @@ def get_data():
     print(line)
     try:
         while(True):
-            
-            line = ser.readline().decode('utf-8')
 
             line = dict(eval(line))
             print(line)
 
             if line:
                 return line
+            line = ser.readline().decode('utf-8')
             
         # print(type(line)==type(dict()))
     except Exception as e:
