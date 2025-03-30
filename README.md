@@ -26,7 +26,7 @@ The project consists of three main components:
 ## Installation
 
 ### Prerequisites
-- Python 3.12.8 or 3.12.9
+- Python 3.12
 - Arduino IDE
 - An ESP32 development board with appropriate sensors
 - Google API credentials for OAuth and Gemini API
@@ -86,6 +86,7 @@ Open your browser and navigate to http://localhost:8501. Log in with your Google
 - httpx_oauth
 - google-generativeai
 - pyserial
+- python-dotenv
 - ArduinoJson (for ESP32)
 - OneWire (for ESP32)
 - DallasTemperature (for ESP32)
